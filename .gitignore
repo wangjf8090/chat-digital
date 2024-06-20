@@ -1,0 +1,34 @@
+# Ignore the virtual environment directory
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+local_settings.py
+
+# If your build process includes running collectstatic, include
+# the following:
+staticfiles/
+
+# Media files
+d_chat/media/
+
+# SQLite database files
+*.sqlite3
+
+# Ignore migrations
+*/migrations/*
+
+# Ignore IDE and editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Python environment files
+.env
+.env.*

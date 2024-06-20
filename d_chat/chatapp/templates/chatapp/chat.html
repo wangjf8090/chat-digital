@@ -1,0 +1,24 @@
+{% extends 'chatapp/base.html' %}
+{% block content %}
+<div class="chat-container">
+    <div class="chat-window">
+        <div class="avatar-container">
+            {% load static %}
+            <video src="{% static 'video/prs_alice.idle.mp4' %}" autoplay loop muted class="avatar"></video>
+            <div class="companion-info">
+                <span class="companion-name">Friendly Companion</span>
+                <button class="add-companion">+</button>
+            </div>
+        </div>
+        <div class="messages">
+            <!-- Messages will be dynamically loaded here -->
+            <div class="message">Hi, I'm Alice 👋 your friendly companion</div>
+            <div class="message">Ready to chat?</div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="chat-input" placeholder="Type a message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
